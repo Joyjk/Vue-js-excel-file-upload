@@ -1,7 +1,8 @@
 <template >
   <!-- <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-  <div >
+  <div class="container">
+    <!-- <SimpleUpload /> -->
     <Upload />
     <SimpleUpload />
     <router-view></router-view>
@@ -32,6 +33,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-  margin-left: 15%;
+  /* margin-left: 10%; */
 }
 </style>

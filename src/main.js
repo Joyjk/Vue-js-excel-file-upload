@@ -1,6 +1,8 @@
 import { createApp } from 'vue'
 //import Vue from 'vue'
 import App from './App.vue'
+// import Vue from 'vue'
+// import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 // import VueRouter from 'vue-router'
 // import UploadFile from './components/UploadFile.vue'
 // VueRouter.Use(VueRouter);
@@ -15,5 +17,7 @@ import App from './App.vue'
 //     router:router,
 //     render: h=>h(App),
 // }).$mount('#app')
+// Vue.use(BootstrapVue)
+// Vue.use(IconsPlugin)
 
 createApp(App).mount('#app')
