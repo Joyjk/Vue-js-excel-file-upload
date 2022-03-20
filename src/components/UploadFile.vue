@@ -58,16 +58,26 @@ export default {
             list:undefined
         }
     },
+    beforeMount(){
+        // $('#example').DataTable({
+        //         //    "processing": true,
+        //         //     "serverSide": true,
+        //        // data:resp.data,
+        //         searching:false,
+        //         paging:true
+        //        });
+    },
      mounted(){
         
         axios.get("http://localhost:11793/api/products/ado").then((resp)=>{
             this.list=resp.data;
-               $('#example').DataTable({
+               $('#example').DataTable(
                 //    "processing": true,
                 //     "serverSide": true,
-                searching:false,
-                paging:false
-               });
+               // data:resp.data,
+                // searching:false,
+                // paging:false
+               );
             console.log(resp)
         })
     }
