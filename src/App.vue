@@ -2,9 +2,9 @@
   <!-- <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   <div class="container">
-    <SimpleUpload />
+    <!-- <SimpleUpload />
     <Upload />
-    <SimpleUpload />
+    <SimpleUpload /> -->
     <router-view></router-view>
   </div>
   
@@ -12,15 +12,15 @@
 
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
-import Upload from './components/UploadFile.vue'
-import SimpleUpload from './components/simpleUpload.vue'
+// import Upload from './components/UploadFile.vue'
+// import SimpleUpload from './components/simpleUpload.vue'
 
 export default {
   name: 'App',
   components: {
     //HelloWorld,
-    Upload,
-    SimpleUpload
+    // Upload,
+    // SimpleUpload
   }
 }
 </script>

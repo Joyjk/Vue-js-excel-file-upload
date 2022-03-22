@@ -1,5 +1,8 @@
+/* eslint-disable */
+
 import { createApp } from 'vue'
 //import Vue from 'vue'
+import router from './router/router'
 import App from './App.vue'
 // import Vue from 'vue'
 // import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
@@ -20,4 +23,7 @@ import App from './App.vue'
 // Vue.use(BootstrapVue)
 // Vue.use(IconsPlugin)
 
-createApp(App).mount('#app')
+const app = createApp(App)
+
+
+app.use(router).mount('#app')
