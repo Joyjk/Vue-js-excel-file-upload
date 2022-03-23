@@ -3,6 +3,8 @@ import {createWebHistory, createRouter} from 'vue-router' ;
 
 const SimpleUpload = import('@/components/simpleUpload.vue')
 const pic = import('@/components/Picture.vue')
+const singlepic = import('@/components/SinglePage.vue')
+const pictureLoad = import('@/components/PictureLoad.vue')
 
 const history = createWebHistory();
 const router = createRouter({
@@ -15,7 +17,15 @@ const router = createRouter({
         {
             path:'/pic',
             component: pic
-        }
+        },
+        {
+            path:'/singlepic/:id',
+            component: singlepic
+        },
+        {
+            path:'/picload',
+            component: pictureLoad
+        },
     ]
 })
 

@@ -1,13 +1,13 @@
 <template>
   <div>
-    <h1>Hello</h1>
+    <h1>Hello Pic Load</h1>
     <div class="row">
       <div class="row">
         <div v-for="item in allData" v-bind:key="item.title" class="column">
           <br />
           <!-- <router-link :to="{path:'/', params:{proTitle: item.title}}"> -->
           <router-link :to="'/singlepic/'+item.title">
-          <img :src="item.pic" :alt="item.title" height="" style="width:100%" width="" class="" />
+          <img :src="'http://localhost:11793/api/Pictures/'+item.title"  :alt="item.title" height="" style="width:100%" width="" class="" />
           <h4>{{ item.title }}.jpg</h4>
           </router-link>
         </div>
@@ -20,7 +20,7 @@ import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "jquery/dist/jquery.min.js";
 export default {
-  name: "PictureData",
+  name: "PictureLoad",
   data() {
     return {
       allData: undefined,

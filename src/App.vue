@@ -21,6 +21,11 @@ export default {
     //HelloWorld,
     // Upload,
     // SimpleUpload
+  },
+  data(){
+    return{
+      
+    }
   }
 }
 </script>
